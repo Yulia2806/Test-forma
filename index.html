@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create New Customer Account</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="" method="post" class="form">
+      <h2 class="form-title">Personal Information</h2>
+      <input
+        onchange="FirstNameChanged(this)"
+        type="text"
+        name="Firstname"
+        required
+        placeholder="First Name*"
+        class="form-input"
+      >
+      <input
+        type="text"
+        name="Lastname"
+        required
+        placeholder="Last Name *"
+        class="form-input"
+        onchange="LastNameChanged(this)"
+      >
+      <label class="form-check">  
+        <input type="checkbox" class="form-checkbox" id="UserChecked">
+        Sign Up for Newsletter
+      </label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email *"
+        required
+        class="form-input"
+        onchange="EmailChanged(this)"
+      >
+      <input
+        type="password"
+        name="password"
+        placeholder="Password *"
+        required
+        class="form-input"
+        onchange="PasswordChanged(this)"
+      >
+      <input
+        type="password"
+        name="password"
+        placeholder="Confirm Password *"
+        required
+        class="form-input"
+        onchange="PasswordConfirmChanged(this)"
+      >
+      <h2 class="form-title">Address Information</h2>
+      <div class="container">
+        <select
+          name="CountryCode"
+          required
+          class="form-country-cod"
+          onchange="CountryCodeChanged(this)"
+        >
+            <option value="">Country Code *</option>
+            <option value="ua">ua (+380)</option>
+            <option value="eg">eg(+818)12556</option>
+            <option value="sw">se(+752)</option>
+        </select>
+        <input 
+          type="tel"
+          name="telephone"
+          required
+          placeholder="Phone Number *"
+          class="form-tel"
+          onchange="UserTelephone(this)"
+        >
+      </div>
+      <input
+        type="text"
+        name="address"
+        required
+        placeholder="Street Address *"
+        class="form-input"
+        onchange="StreetAddressChanged(this)"
+      >
+      <select name="country" required onchange="CountryChanged(this)" class="form-country form-input">
+        <option value="">Country *</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="egipt">Egypt</option>
+        <option value="sweden">Sweden</option>
+      </select>
+      <select name="city" onchange="CityCodeChanged(this)" class="info-city form-input"> 
+        <option value="">City *</option>
+      </select>
+      <input 
+        type="text" 
+        name="postalCode" 
+        placeholder="Zip/Postal Code *" 
+        required 
+        class="form-input"
+        onchange="PostalCodeChanged(this)"
+      >
+      <p class="required"><span>*</span> Required Fields</p>
+      <input 
+        id="submit" 
+        placeholder="CREATE AN ACCOUNT" 
+        onclick="Submit()" 
+        disabled
+        class="form-button"
+      >
+    </form>
+    <div id="accInfo" class="AccountInformation" hidden>
+        <h2 class="form-title">Account Information</h2>
+        <div class="accInfConteiner">
+          <div>
+            <h4>Contact Information</h4>
+            <p id="userName"></p>
+            <p id="userEmail"></p>
+          </div>
+          <div>
+            <h4>Newsletter</h4>
+            <span id="userSubscribed"></span>
+          </div>
+        </div>
+        <div>
+          <h2 class="form-title">Address Book</h2>
+          <h4>Street</h4>
+          <p id="street"></p>
+          <h4>Country</h4>
+          <p id="country"></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>    
+  </body>
+</html>
