@@ -1,0 +1,89 @@
+.form {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.form-title {
+  border-bottom: 1px solid #D3D3D3;
+  padding: 10px 0;
+}
+
+.form-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+
+.form-input::placeholder {
+  color: black;
+  /* content: " *"; */
+}
+
+.form-check {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-country-cod {
+  display: block;
+  width: 30%;
+  padding: 10px;
+  appearance: none;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+
+.form-tel {
+  display: block;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+
+.form-tel::placeholder {
+  color: #000;
+}
+
+.info-city {
+  appearance: none;
+}
+
+
+.form-button {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.required {
+  color: red;
+}
+
+.accInfConteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AccountInformation {
+  margin: 0 auto;
+  width: 40%;
+}
